@@ -2,10 +2,15 @@
   text-align: center;
 }
 
+html {
+  background-color: #32373a;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,18 +19,144 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.app-page {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.graph-body {
+  margin: auto;
+  width: 80%;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: #32373a;
+  color: black;
+  padding: 8px 10px;
+  margin: 2px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: white
+}
+
+a:hover {
+  text-decoration: none;
+  color: #40C7EB
+}
+
+.header {
+  padding: 1rem;
+}
+/* Green */
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.success:hover, .success-selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Blue */
+.info {
+  border-color: #2196F3;
+  color: dodgerblue;
+}
+
+.info:hover, .info-selected {
+  background: #2196F3;
+  color: white;
+}
+
+/* Orange */
+.warning {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.warning:hover, .warning-selected {
+  background: #ff9800;
+  color: white;
+}
+
+/* Red */
+.danger {
+  border-color: #f44336;
+  color: red;
+}
+
+.danger:hover, .danger-selected {
+  background: #f44336;
+  color: white;
+}
+
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+
+
+.card-deck {
+  display: flex;
+}
+
+
+/* CLASS COLORS */
+.mage {
+  border-color: #40C7EB;
+  color: #40C7EB;
+}
+
+.mage:hover, .mage-selected {
+  background: #40C7EB;
+  color: white;
+}
+
+.warlock {
+  border-color: #8787ED;
+  color: #8787ED;
+}
+
+.warlock:hover, .warlock-selected {
+  background: #8787ED;
+  color: white;
+}
+
+.priest {
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.priest:hover, .priest-selected {
+  background: #FFFFFF;
+  color: black;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +166,109 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.guides-div{
+  overflow-x: hidden
+}
+
+.vods-div tr {
+  border: 0.5px solid #5c5c5c;
+}
+
+.vods-div .boss-square {
+  width: 15%;
+}
+
+.vods-div .boss-square .boss-image {
+    float: left
+}
+
+.vods-div .boss-square .boss-name {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 10px;
+}
+
+.vods-div table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vods-div .rowContent {
+  padding: 1px
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  border-bottom: 0.5px solid #5c5c5c;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #40C7EB;
+  color: #333  
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #40C7EB;
+  color: #333
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
