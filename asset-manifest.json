@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/mage-compendium/static/css/main.fe9462a9.chunk.css",
-    "main.js": "/mage-compendium/static/js/main.39e2d703.chunk.js",
-    "main.js.map": "/mage-compendium/static/js/main.39e2d703.chunk.js.map",
+    "main.css": "/mage-compendium/static/css/main.7b80d190.chunk.css",
+    "main.js": "/mage-compendium/static/js/main.1e0c49f4.chunk.js",
+    "main.js.map": "/mage-compendium/static/js/main.1e0c49f4.chunk.js.map",
     "runtime-main.js": "/mage-compendium/static/js/runtime-main.adfff642.js",
     "runtime-main.js.map": "/mage-compendium/static/js/runtime-main.adfff642.js.map",
-    "static/js/2.f0f03483.chunk.js": "/mage-compendium/static/js/2.f0f03483.chunk.js",
-    "static/js/2.f0f03483.chunk.js.map": "/mage-compendium/static/js/2.f0f03483.chunk.js.map",
+    "static/js/2.cf295df0.chunk.js": "/mage-compendium/static/js/2.cf295df0.chunk.js",
+    "static/js/2.cf295df0.chunk.js.map": "/mage-compendium/static/js/2.cf295df0.chunk.js.map",
     "static/js/3.66213d63.chunk.js": "/mage-compendium/static/js/3.66213d63.chunk.js",
     "static/js/3.66213d63.chunk.js.map": "/mage-compendium/static/js/3.66213d63.chunk.js.map",
     "index.html": "/mage-compendium/index.html",
-    "static/css/main.fe9462a9.chunk.css.map": "/mage-compendium/static/css/main.fe9462a9.chunk.css.map",
-    "static/js/2.f0f03483.chunk.js.LICENSE.txt": "/mage-compendium/static/js/2.f0f03483.chunk.js.LICENSE.txt"
+    "static/css/main.7b80d190.chunk.css.map": "/mage-compendium/static/css/main.7b80d190.chunk.css.map",
+    "static/js/2.cf295df0.chunk.js.LICENSE.txt": "/mage-compendium/static/js/2.cf295df0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.adfff642.js",
-    "static/js/2.f0f03483.chunk.js",
-    "static/css/main.fe9462a9.chunk.css",
-    "static/js/main.39e2d703.chunk.js"
+    "static/js/2.cf295df0.chunk.js",
+    "static/css/main.7b80d190.chunk.css",
+    "static/js/main.1e0c49f4.chunk.js"
   ]
 }
