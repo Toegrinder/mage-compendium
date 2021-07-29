@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mage-compendium/static/css/main.d6324f08.chunk.css",
+    "main.css": "/mage-compendium/static/css/main.a19258bf.chunk.css",
     "main.js": "/mage-compendium/static/js/main.ba857ecb.chunk.js",
     "main.js.map": "/mage-compendium/static/js/main.ba857ecb.chunk.js.map",
     "runtime-main.js": "/mage-compendium/static/js/runtime-main.adfff642.js",
@@ -10,13 +10,13 @@
     "static/js/3.66213d63.chunk.js": "/mage-compendium/static/js/3.66213d63.chunk.js",
     "static/js/3.66213d63.chunk.js.map": "/mage-compendium/static/js/3.66213d63.chunk.js.map",
     "index.html": "/mage-compendium/index.html",
-    "static/css/main.d6324f08.chunk.css.map": "/mage-compendium/static/css/main.d6324f08.chunk.css.map",
+    "static/css/main.a19258bf.chunk.css.map": "/mage-compendium/static/css/main.a19258bf.chunk.css.map",
     "static/js/2.cf295df0.chunk.js.LICENSE.txt": "/mage-compendium/static/js/2.cf295df0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.adfff642.js",
     "static/js/2.cf295df0.chunk.js",
-    "static/css/main.d6324f08.chunk.css",
+    "static/css/main.a19258bf.chunk.css",
     "static/js/main.ba857ecb.chunk.js"
   ]
 }
