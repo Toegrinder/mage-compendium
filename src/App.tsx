@@ -8,6 +8,7 @@ import SimsComponent from './components/sims/SimsComponent';
 import GuidesComponent from './components/guides/GuidesComponent';
 import Header from './components/header/Header';
 import VODsComponent from './components/vods/VODsComponent';
+import FAQComponent from './components/faq/FAQComponent';
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
           <Route 
             exact path="/vods" 
             render={() => (<VODsComponent/>)}
+          />
+          <Route 
+            exact path="/faq" 
+            render={() => (<FAQComponent/>)}
           />
         </Router>
       </div>

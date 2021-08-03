@@ -37,6 +37,10 @@ html {
   color: white;
 }
 
+.header-div {
+  background-color: #32373a;
+}
+
 .graph-body {
   margin: auto;
   width: 80%;
@@ -66,60 +70,7 @@ a:hover {
 }
 
 .header {
-  padding: 1rem;
-}
-/* Green */
-.success {
-  border-color: #4CAF50;
-  color: green;
-}
-
-.success:hover, .success-selected {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/* Blue */
-.info {
-  border-color: #2196F3;
-  color: dodgerblue;
-}
-
-.info:hover, .info-selected {
-  background: #2196F3;
-  color: white;
-}
-
-/* Orange */
-.warning {
-  border-color: #ff9800;
-  color: orange;
-}
-
-.warning:hover, .warning-selected {
-  background: #ff9800;
-  color: white;
-}
-
-/* Red */
-.danger {
-  border-color: #f44336;
-  color: red;
-}
-
-.danger:hover, .danger-selected {
-  background: #f44336;
-  color: white;
-}
-
-/* Gray */
-.default {
-  border-color: #e7e7e7;
-  color: black;
-}
-
-.default:hover {
-  background: #e7e7e7;
+  padding: 0;
 }
 
 
@@ -127,6 +78,32 @@ a:hover {
   display: flex;
 }
 
+.mage-image {
+  height: 30px;
+  float: left;
+  padding: 6px;
+}
+
+
+
+
+/* 
+********************
+    SIMS 
+********************
+*/
+
+.nav-button {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8px 22px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 3px 4px;
+  border-radius: 5px;
+}
 
 /* CLASS COLORS */
 .mage {
@@ -134,9 +111,14 @@ a:hover {
   color: #40C7EB;
 }
 
-.mage:hover, .mage-selected {
+.mage:hover {
   background: #40C7EB;
   color: white;
+}
+
+.mage-selected {
+  color: #40C7EB;;
+  box-shadow: inset 0 0 0 1px #40C7EB;
 }
 
 .warlock {
@@ -159,6 +141,36 @@ a:hover {
   color: black;
 }
 
+.target {
+  border-color: #4caf50;
+  color: #4caf50;
+}
+
+.target:hover {
+  background: #4caf50;
+  color: white;
+}
+
+.target-selected {
+  color: #4caf50;;
+  box-shadow: inset 0 0 0 1px #4caf50;
+}
+
+.graph {
+  border-color: #ff9800;
+  color: #ff9800;
+}
+
+.graph:hover {
+  background: #ff9800;
+  color: white;
+}
+
+.graph-selected {
+  color: #ff9800;
+  box-shadow: inset 0 0 0 1px #ff9800;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -173,12 +185,26 @@ a:hover {
   overflow-x: hidden
 }
 
-.vods-div tr {
-  border: 0.5px solid #5c5c5c;
+
+
+/* 
+********************
+    VODS 
+********************
+*/
+
+.vods-div {
+  margin: auto;
+  width: 80%;
+}
+
+.vods-div td {
+  border-top: 0.5px solid #5c5c5c;
+  border-bottom: 0.5px solid #5c5c5c;
 }
 
 .vods-div .boss-square {
-  width: 15%;
+  width: 20%;
 }
 
 .vods-div .boss-square .boss-image {
@@ -196,14 +222,57 @@ a:hover {
   border-collapse: collapse;
 }
 
-.vods-div .rowContent {
-  padding: 1px
+.vods-div th {
+  padding: 12px 4px;
 }
+
+.vods-div a {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 5px;
+}
+
+.vods-div a:hover {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.vods-div .frost a:hover {
+  background-color: #40C7EB;
+  color: #333
+} 
+
+.vods-div .arcane a:hover {
+  background-color: #d77ef8;
+  color: #333
+} 
+
+.vods-div .fire a:hover {
+  background-color: #ff9900;
+  color: #333
+} 
+
+.vods-div .rowContent {
+  padding: 1px;
+  margin: 9px;
+}
+
+
+/* 
+********************
+    NAVIGATION 
+********************
+*/
 
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #32373a;
   font-family: Arial;
   border-bottom: 0.5px solid #5c5c5c;
 }
@@ -271,4 +340,32 @@ a:hover {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+
+/* 
+********************
+    FAQ 
+********************
+*/
+
+/* Navbar container */
+.faq-div {
+  margin: auto;
+  width: 80%;
+  text-align: left;
+}
+
+.qa-div {
+  padding: 1em;
+}
+
+.qa-q {
+  font-weight: bold;
+  text-align: left;
+}
+
+.qa-a {
+  text-align: left;
 }

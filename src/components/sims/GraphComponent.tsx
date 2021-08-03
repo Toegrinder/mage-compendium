@@ -95,19 +95,16 @@ export default class GraphComponent extends React.Component<Props, State> {
         //covenants
         if (n.includes("venthyr")) return "#a33421"
         else if (n.includes("kyrian")) return "#ccc450"
-        else if (n.includes("necro")) return "#5acc50"
+        else if (n.includes("necrolord")) return "#5acc50"
         else if (n.includes("nightfae") || n.includes("night_fae") || n.includes("nf_")) return "#0e74e8"
         //trinkets
-        else if (n.includes("226")|| n.includes("233")) return "#a33421"
-        else if (n.includes("213")|| n.includes("220")) return "#0e74e8"
-        else if (n.includes("200")|| n.includes("207")) return "#ccc450"
-        else if (n.includes("184") || n.includes("194")) return "#5acc50"
-        /*
-        else if (n.includes("226")|| n.includes("233")) return "#e6cc80"
-        else if (n.includes("213")|| n.includes("220")) return "#ff8000"
-        else if (n.includes("200")|| n.includes("207")) return "#a335ee"
-        else if (n.includes("184") || n.includes("194")) return "#0070dd"
-        */
+        else if (n.includes("259")) return "#a33421"
+        else if (n.includes("252")) return "#a33421"
+        else if (n.includes("246")) return "#0e74e8"
+        else if (n.includes("239")) return "#40C7EB"
+        else if (n.includes("233")) return "#5acc50"
+        else if (n.includes("226")) return "#ccc450"
+        
         else return defaultColor
     }
 

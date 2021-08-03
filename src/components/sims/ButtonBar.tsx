@@ -33,24 +33,25 @@ export default class ButtonBar extends React.Component<Props, State> {
     render() {
         var specButtons = this.props.specs.map((it) => {
             let classColor: string = "mage"
-            let selectedClass : string = this.props.selectedSpec === it.ref ? `${classColor}-selected` : ""
-           return <button key={it.ref} className={`nav-button btn ${classColor} ${selectedClass}`} onClick={() => this.props.changeSpecSelection(it.ref)}>{ it.displayName }</button>
+            let selectedClass : string = this.props.selectedSpec === it.ref ? `${classColor}-selected` : "nav-button spec"
+           return <button key={it.ref} className={`nav-button ${classColor} ${selectedClass}`} onClick={() => this.props.changeSpecSelection(it.ref)}>{ it.displayName }</button>
         })
 
         var targetButtons = [];
         for (const [key, value] of Object.entries(targets)) {
-            let selectedClass : string = this.props.selectedTarget === value ? "nav-button btn success success-selected" : "nav-button btn success"
+            let selectedClass : string = this.props.selectedTarget === value ? "nav-button target-selected" : "nav-button target"
             targetButtons.push( <button key={key} className={selectedClass} onClick={() => this.props.changeTargetSelection(value)}>{ formatText(key) }</button> )
         }
 
         var graphButtons = []
         for (const [key, value] of Object.entries(graphs)) {
-            let selectedClass : string = this.props.selectedGraph === value ? "nav-button btn warning warning-selected" : "nav-button btn warning"
+            let selectedClass : string = this.props.selectedGraph === value ? "nav-button graph-selected" : "nav-button graph"
             graphButtons.push( <button key={key} className={selectedClass} onClick={() => this.props.changeGraphSelection(value)}>{ formatText(key) }</button> )
         }
 
                return ( 
-               <div>
+                <div className={'header-div'}>
+            <div className="navbar">
                     <div className="button-row">
                         { specButtons }
                     </div>
@@ -62,6 +63,7 @@ export default class ButtonBar extends React.Component<Props, State> {
                     <div className="button-row">
                         { graphButtons }
                     </div>
+                </div>
                 </div>
              )
     }

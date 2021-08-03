@@ -37,7 +37,7 @@ export default class SimsComponent extends React.Component<Props, State> {
         this.changeTargetSelection = this.changeTargetSelection.bind(this)
         this.state = {
             selectedSpec: getQueryParam("spec") ?? mageSpecs[0].ref,
-            selectedGraph: getQueryParam("graphs") ?? graphs.COVENANTS,
+            selectedGraph: getQueryParam("graphs") ?? graphs.COVENANTS_RENOWN_40,
             selectedTarget: getQueryParam("targets") ?? targets.ONE_TARGET,
             selectedChart: null,
             loading: true,
@@ -88,7 +88,6 @@ export default class SimsComponent extends React.Component<Props, State> {
             targets: selectedTarget
         }
         return <div>
-            <RawLinkStyle to={`/sims/html`}>View HTML Results</RawLinkStyle>
             <div className="header">
                 <ButtonBar
                     changeSpecSelection={this.changeSpecSelection}

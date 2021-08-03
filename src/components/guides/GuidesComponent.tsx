@@ -3,30 +3,36 @@ import { getQueryParam } from '../../util/Util';
 
 
 export default function GuidesComponent() {
-    let embeddedDoc = ""
+    let embeddedDoc: string
     const spec = getQueryParam("spec")
-    switch(spec){
+    switch (spec) {
         case "arcane":
             embeddedDoc = "https://docs.google.com/document/d/e/2PACX-1vR51NocXITmiiQSKvuTlAEuRCsI69cAJeo0DOnUVTtHvCQU2F0IbkGxOwhMWzqfkkSeRv37nn6wL5mU/pub?embedded=true"
             break;
         case "frost":
-            embeddedDoc ="https://docs.google.com/document/d/e/2PACX-1vSlLWddAlojK9Naybo3qqUebGIM1mqbRrThf8qX2oLw7ALMsoL-g2F5Z80FzUMfek8EFoCOMo_-BC_C/pub?embedded=true"
+            embeddedDoc = "https://docs.google.com/document/d/e/2PACX-1vSlLWddAlojK9Naybo3qqUebGIM1mqbRrThf8qX2oLw7ALMsoL-g2F5Z80FzUMfek8EFoCOMo_-BC_C/pub?embedded=true"
             break;
         case "fire":
             embeddedDoc = "https://docs.google.com/document/d/e/2PACX-1vSfZkYq70FXL2sPFAgpF7RI2vz3EvrBlehe9eK3Y6bCTwzh2rWvsE1evRqWhnsqfSApoMGdk2HMIhHu/pub?embedded=true"
+            break;
+        default:
+            embeddedDoc = "default"
+            break;
 
     }
-    return (
-        <div className={'guides-div'}>
-        <div className="guides-header-div">
-        <RawLinkStyle href={`https://tinyurl.com/${spec}-mage-compendium`}>For working navigation please visit the google doc</RawLinkStyle>
-        </div>
-            <StyledIFrame 
-            src={embeddedDoc}
-            ></StyledIFrame>
-        </div>
 
-        
+    const content = embeddedDoc !== "default" ?
+        <div className={'guides-div'}>
+            <div className="guides-header-div">
+                <RawLinkStyle href={`https://tinyurl.com/${spec}-mage-compendium`}>For working navigation please visit the google doc</RawLinkStyle>
+            </div>
+            <StyledIFrame
+                src={embeddedDoc}
+            ></StyledIFrame>
+        </div> : <div>no stuff</div>
+       
+    return (
+         content 
     )
 }
 
@@ -48,7 +54,7 @@ margin-right: 10px;
 /*export default function GuidesComponent() {
     return (
         <div className={'guides-div'}>
-            <StyledIFrame 
+            <StyledIFrame
             src="https://docs.google.com/document/d/e/2PACX-1vSfZkYq70FXL2sPFAgpF7RI2vz3EvrBlehe9eK3Y6bCTwzh2rWvsE1evRqWhnsqfSApoMGdk2HMIhHu/pub?embedded=true"
             seamless={false}
             marginWidth={230}

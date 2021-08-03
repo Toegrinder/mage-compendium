@@ -19,13 +19,13 @@ export default function VODsComponent() {
                                 <img src={`bosses/${boss.image}`} className={"boss-image"} alt={boss.name}/>
                                 <div className={"boss-name"}>{boss.name}</div>
                             </td>
-                            <td className={"spec-square"}>
+                            <td className={"spec-square arcane"}>
                                 {boss.arcane.map(it => { return link(it.link, it.displayName)})}
                             </td>
-                            <td className={"spec-square"}>
+                            <td className={"spec-square frost"}>
                                 {boss.frost.map(it => { return link(it.link, it.displayName)})}
                             </td>
-                            <td className={"spec-square"}>
+                            <td className={"spec-square fire"}>
                                 {boss.fire.map(it => { return link(it.link, it.displayName)})}
                             </td>
                         </tr>

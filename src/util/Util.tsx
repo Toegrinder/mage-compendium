@@ -1,8 +1,15 @@
 
 export function formatText(text: string) {
+    console.log(text)
     return titleCase(
-        text.replaceAll("_", " ")
+        text
+        .replaceAll("Venthyr_", "")
+        .replaceAll("NightFae_", "")
+        .replaceAll("Kyrian_", "")
+        .replaceAll("Necrolord_", "")
+        .replaceAll("_", " ")
         .replaceAll("-", " ")
+        
     )
 }
 
