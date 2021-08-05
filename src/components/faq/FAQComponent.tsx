@@ -87,10 +87,6 @@ export default class FAQComponent extends React.Component<Props, State> {
                 answer={"No, in fact whenever you are playing without Glacial Spike talented, Mastery: Icicles should not factor into a single one of your decisions. At 5 Icicles gaining a new Icicle with simply launch the oldest one. Meaning that they should be functionally ignored."}
             />
             <Question
-                question={"Should I use Ice Lance without a proc to maintain Chain Reaction?"}
-                answer={"No, Chain Reaction is completely passive and should be ignored."}
-            />
-            <Question
                 question={"Should I use Freezing Winds or Glacial Fragments in Dungeons?"}
                 answer={"I recommend Freezing Winds. Glacial Fragments is terrible for priority damage and is capped at 5 targets, which is a really narrow space to exist in. On any pack where there are 1 or 2 mobs that are the limiting factor you'll want the priority damage from Freezing Winds. And on the bigger pulls where you really need AOE, Glacial Fragments will be capped and most of your damage will be Orb/Blizzard cycles. That said Glacial Fragments absolutely excels at 4-5 targets. If you find that your group doesn’t need boss damage and your tank is pulling mostly 1-2 packs at a time, Glacial Fragments will provide by far the most damage. Another thing to remember is that while spamming Ice Lance with Glacial Fragments is a huge loss in priority damage, Glacial Fragments is still the best legendary at 3-5 targets even when playing normally; which does not concede anywhere near as much priority damage."}
             />
@@ -122,7 +118,7 @@ export default class FAQComponent extends React.Component<Props, State> {
             />
             <Question
                 question={"How do I sim Focus Magic trade?"}
-                answer={"external_buffs.focus_magic=1"}
+                answer={"mage.focus_magic_trade=1"}
             />
             <Question
                 question={"How do I sim Shifting Power without the damage?"}

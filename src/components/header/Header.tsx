@@ -5,7 +5,7 @@ export default function Header() {
         <div className={'header-div'}>
             <div className="navbar">
             <img src={`mage-icon.png`} className={"mage-image"} alt={"mage"}/>
-            <a href={`${BASE_URL}/`}>Home</a>
+            {/*<a href={`${BASE_URL}/`}>Home</a>*/}
             <a href={`${BASE_URL}/sims`}>Sims</a>
             <div className="dropdown">
                 <button className="dropbtn">Guides

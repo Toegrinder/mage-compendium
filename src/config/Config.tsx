@@ -20,9 +20,9 @@ export const mageSpecs = [
 ]
 
 export const graphs = {
-   COVENANTS_RENOWN_40: "soulbinds",
-   COVENANTS_RENOWN_43: "soulbinds_pot",
-   COVENANTS_RENOWN_80: "soulbinds_ptr",
+   //COVENANTS_RENOWN_40: "soulbinds",
+   //COVENANTS_RENOWN_43: "soulbinds_pot",
+   COVENANTS: "soulbinds_ptr",
    //CONDUITS: "relics",
    LEGENDARIES: "legendaries",
    //LEGENDARIES_COV: "legendaries_cov",
@@ -161,9 +161,10 @@ export const VODS = {
             name: "Kel'Thuzad",
             image: "2422-icon.jpg",
             arcane: [
+                {displayName : "Toegrinder", link: "https://www.youtube.com/watch?v=uwATFZQqTKI"}
             ],
             frost : [
-                {displayName : "Imfiredup", link: "https://www.twitch.tv/videos/1089639208"}  ,
+                {displayName : "Imfiredup", link: "https://www.twitch.tv/videos/1089639208"},
                 {displayName : "Dorovon", link: "https://www.twitch.tv/videos/1105274277"}
             ],
             fire : [

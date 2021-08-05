@@ -37,7 +37,7 @@ export default class SimsComponent extends React.Component<Props, State> {
         this.changeTargetSelection = this.changeTargetSelection.bind(this)
         this.state = {
             selectedSpec: getQueryParam("spec") ?? mageSpecs[0].ref,
-            selectedGraph: getQueryParam("graphs") ?? graphs.COVENANTS_RENOWN_40,
+            selectedGraph: getQueryParam("graphs") ?? graphs.COVENANTS,
             selectedTarget: getQueryParam("targets") ?? targets.ONE_TARGET,
             selectedChart: null,
             loading: true,
